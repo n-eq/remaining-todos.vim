@@ -1,3 +1,7 @@
+" remaining-todos.vim
+" author: marrakchino (nabilelqatib@gmail.com)
+" version: 0.1
+
 function! Remaining_Todos()
 	let number_of_todos = 0
 	let number_of_todos = number_of_todos + (system('grep -i "TODO" '.expand('%:p') . '| wc -l'))
