@@ -2,7 +2,7 @@
 " author: marrakchino (nabilelqatib@gmail.com)
 " version: 0.1
 
-function! Remaining_Todos()
+function! s:Remaining_Todos()
 	let number_of_todos = 0
 	let number_of_todos = number_of_todos + (system('grep -i "TODO" '.expand('%:p') . '| wc -l'))
 	if number_of_todos > 0
@@ -12,4 +12,4 @@ function! Remaining_Todos()
 	endif
 endfun
 
-autocmd BufWinLeave * call Remaining_Todos()
+autocmd BufWinLeave * call <SID>Remaining_Todos()
