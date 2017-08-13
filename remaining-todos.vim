@@ -1,6 +1,6 @@
 " remaining-todos.vim
 " author: marrakchino (nabilelqatib@gmail.com)
-" version: 0.1
+" version: 0.2
 
 function! s:Remaining_Todos()
 	let number_of_todos = 0
@@ -13,3 +13,4 @@ function! s:Remaining_Todos()
 endfun
 
 autocmd BufWinLeave * call <SID>Remaining_Todos()
+command! -nargs=0 Todos :call <SID>Remaining_Todos()
