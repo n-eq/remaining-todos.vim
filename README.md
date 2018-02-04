@@ -1,5 +1,4 @@
-# Remaining TODOs
-There are <x> remaining TODOs in this file!
+# Remaining "TODO"s
 This plugin tells you about the TODOs remaining in a file when closing it.
 
 ## Usage
